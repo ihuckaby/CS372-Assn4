@@ -239,11 +239,32 @@ int BubbleSort ( int arrayToSort[] , int arraySize , int junk )
 // INPUTS:
 //		Parameters:
 //				arrayToSort		- array to sort
+//				arraySize		- number of elements in array
+//				junk			- funtion pointer needs three arugments
 // OUTPUTS:
 //		Parameters:
 //				arrayToSort		- sorted array
 // -----------------------------------------------------------------------------
-
+void ShellSort ( int arrayToSort[] , int arraySize , int junk)
+{
+	//local variables
+	int gap = arraySize;		// for tracking step size of sort
+	bool sorted = false;		// for detecting a run with no swaps
+	int idx;					// index
+	int test;					// element to compare
+	int value;					// value to compare/insert
+	int 
+	
+	while ( !sorted || (gap > 1)
+	{
+		sorted = true; 			// assume this was last until swap is made
+		gap /= 2;				// halve the stepping size
+		idx = gap;				// set item to sort
+		
+		while ( idx < arraySize )
+		{
+			if ( (idx - gap) > 0 && arrayToSort[idx] < 
+		
 // -----------------------------------------------------------------------------
 // FUNCTION : ComputeResults
 // IMPLEMENTED BY: Ian Huckaby
